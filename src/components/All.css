@@ -1,0 +1,475 @@
+/* home section start */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../img/imm2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+}
+.home.content{
+    justify-items: center;
+    text-align: center;
+}
+.text{
+    color: rgb(252, 248, 243);
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 200px;
+    justify-content: center;
+}
+.h1{
+    color:  white;
+    font-size: 40px;
+    font-weight: 300;
+    text-shadow: 0px 1px 1px black;
+    /* margin-bottom: 200px; */
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.changecontent::after{
+    content:' ';
+    color: rgb(0, 0, 0); 
+    text-shadow:  0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "wedding";}
+    10%{content: "Birthday party";}
+    30%{content: "Anniversary party";}
+    40%{content: "corporate Event";}
+    50%{content: "seminar";}
+    60%{content: "product event";}
+}
+
+.btn-book{
+    background: rgb(0, 0, 0);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    margin-right: 80px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width:430px){
+    .home{
+        padding: 0;
+    }
+    .h5,.h1{
+      padding: 4px;
+    }
+}
+/* home section end */
+
+/* about section start */
+.about{
+    color:  rgb(2, 2, 2);
+    height: 600px;
+    padding-top: 30px;
+    background:white;
+}
+.about .card{
+    border-radius: 10px;
+    width: 450px ;
+    height: 400px;
+    background-image: url(./../img/im3.jpg);
+    background-size: 100% 400px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(5, 2, 3);
+}
+.about p{
+    font-size: 17px;
+    color: black;
+    
+}
+#about-btn{
+    
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(3, 1, 1);
+    color: white;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#about-btn:hover{
+    width: 190px;
+}
+
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+    .main-text h1{
+      padding: 20px;
+    }
+}
+
+/* bookinging section start */
+
+.booking{
+    background:white;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 30px;
+    
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.booking .card{
+    width: 450px ;
+    height: 400px;
+    background-image: url(./../img/wed.png);
+    background-size: 100% 400px;
+
+}
+.booking .row{
+    margin-top: 50px;
+}
+.booking form input{
+    padding: 5px;
+    color: white;
+    background-color: rgb(14, 13, 13);
+    border: none;
+    outline: none;
+    width: 500px;
+    margin: 3px;
+    font-size: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.booking form textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    background: #000;
+    height: 90px;
+    margin-left: 27px;
+    width: 500px;
+}
+.booking .submit{
+    width: 160px;
+    font-size: 17px;
+    padding: 6px;
+    font-weight: 550;
+    background: rgb(9, 8, 8);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+.booking .submit:hover{
+    width: 200px;
+}
+@media (max-width:765px){
+    .booking{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+
+/* bookinging section end */
+
+/* section Pricing start */
+.Pricing{
+    background:white;
+        color: rgb(0, 0, 0);
+        margin-top: 0px;
+      }
+.main-text h1{
+        text-align: center;
+        text-shadow: 0px 1px 1px black;
+        font-weight: 600;
+}
+.Pricing .card{
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    width: 360px;
+    background:rgb(8, 7, 6);
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    margin-bottom: 20px;
+}
+.Pricing .card img{
+    border-radius: 10px;
+}
+.Pricing .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;  
+    color: white; 
+}
+.Pricing .card .card-body p{
+    font-size: 15px;
+    color: white; 
+}
+.checked{
+    color: gold;
+}
+.star{
+    font-size: 15px;
+    color: #000;
+}
+.Pricing .card .card-body h6{
+    font-size: 15px;
+    color: #000;
+}
+.Pricing .card .card-body a{
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(248, 226, 202);
+    color: white;
+    border-radius: 5px;
+}
+#book-btn{
+    color: white;
+    background-color: #000;
+    padding: 3px;
+    text-decoration: none;
+}
+
+
+
+/* service section start */
+.services{
+    background:white;
+    color: rgb(2, 1, 1);
+    height: 100vh;
+    margin-top: 0px;
+ }
+.services .card{
+     box-shadow: 0px 5px 30px -6px black;
+     border: none;
+     height: 270px;
+     width: 350px;
+     cursor: pointer;
+     margin: 8px;
+ }
+ .services .card i{
+     font-size: 50px;
+     text-align: center;
+     color: rgb(11, 10, 10);
+     margin-top: 20px;
+     color:rgb(0, 0, 0);
+ }
+ .services .card .card-body h3{
+     font-weight: 400;
+     text-align: center;
+ }
+ #btn-ser{
+    background:rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+ }
+ #btn-ser:hover{
+    font-size: 18px;
+ }
+
+ /* service section end */
+
+ /* gallery section start */
+ .gallery{
+    background:white; 
+    color: rgb(4, 2, 2);
+    padding-top: 30px;
+ }
+ .main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.gallery .card{
+     box-shadow: 0px 5px 5px -6px black;
+     border: none;
+     height: 230px;
+     width: 330px;
+     cursor: pointer;
+     margin: 10px;
+     
+ }
+/* gallery end */
+/* blog start */
+.Blog{
+    background:white;
+    color: rgb(2, 1, 1);
+    padding-top: 50px;
+}
+.Blog .card{
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px; 
+    background:rgb(0, 0, 0);     
+}
+.Blog .card .card-body{
+    text-align: center;
+}
+.Blog .card .card-body h4{
+    color: white;
+    font-weight: 400;
+}
+.Blog .card .card-body,p{
+    font-weight: 300;
+    color: white;
+}
+#blog-btn{
+    margin-left: 90px;
+    background: rgb(4, 3, 3);
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 25px;
+ }
+ #blog-btn:hover{
+    font-size: 18px;
+ }
+ /* contact section start */
+ .container-contact{
+    background:white;
+    padding-top: 1px;
+    padding-bottom: 60px;
+ }
+ .contact{
+    background:rgb(251, 242, 231);
+    width: 400px;
+    padding: 3px;
+ }
+ .text-h3-c{
+    color: rgb(0, 0, 0);
+ }
+ .form-contact{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+    background-color: #000;
+ }
+ form input,form textarea{
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.1);
+    color: white;
+ }
+ .btn-contact{
+     color: black;
+    background-color: rgb(211, 154, 80);
+    width: 100px;
+    justify-content: center;
+    margin-left: 200px;
+ }
+
+ /* contact section end */
+
+ /* footer section start */
+.footer{
+    padding: 1rem 3rem;
+    background: #000;
+    color: white;
+}
+.top{
+    display: flex;
+    align-items:center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top i{
+    color:aliceblue;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.top i:hover{
+    color: rgb(246, 192, 122);
+}
+.bottom{
+    padding-top: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom div{
+    display: flex;
+    flex-direction: column;
+}
+.bottom h4{
+    font-size: 1.3rem;
+    padding: 1rem 0 0.8rem 0;
+}
+.bottom a{
+    text-decoration: none;
+    color: wheat;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+ /* footer section end */
+
+ /* login start */
+ .contact{
+    justify-content: center;
+    margin-left: 480px;
+    background-color: white;
+ }
+ #text-l{
+    margin-top: 50px;
+    justify-content: center;
+ }
+ .inputbox{
+    display: block;
+    margin: 25px;
+    padding: 7px;
+    width: 350px;
+    background: #000;
+    color: white;
+    border: 1px solid skyblue;
+  }
+  .appbutton{
+    margin: 25px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid;
+    margin-right: 50%;
+    text-decoration: none;
+  }
+  .register{
+    margin-left: 36%;
+    justify-content: center;
+    margin-top: 40px;
+  }
